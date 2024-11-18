@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  /* App Container */
+  .App {
+    padding: 20px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button Hover and Active States */
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Specific Button Styles */
+  button:first-of-type {
+    background-color: #ff6666;
+    color: #fff;
+  }
+  
+  button:nth-of-type(2) {
+    background-color: #66b3ff;
+    color: #fff;
+  }
+  
+  /* Product List */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Product Card Hover Effect */
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product Card when Favorited */
+  .product-card.favorited {
+    border: 2px solid #ff6666;
+    background: linear-gradient(135deg, #ffe6e6, #ffffff);
+  }
+  
+  /* Product Image */
+  .product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Product Title */
+  .product-card h3 {
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Product Description */
+  .product-card p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  /* Product Features */
+  .features {
+    margin-top: 10px;
+    text-align: left;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .features li {
+    margin: 5px 0;
+  }
+  
+  /* Favorite Button */
+  button.favorite-btn {
+    background-color: #ff6666;
+    color: #fff;
+  }
+  
+  /* Favorite Button when Favorited */
+  button.favorite-btn.favorited {
+    background-color: #ff3333;
+  }
+  
+  /* Feature Button */
+  button.feature-btn {
+    background-color: #66b3ff;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  /* Rating Section */
+  .product-card .rating {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #ffcc00; /* Gold color for stars */
+  }
+  
+  /* Star Styles (Consolidated) */
+  .star {
+    font-size: 2em;
+    cursor: pointer;
+    color: #d3d3d3; /* Light gray for empty stars */
+    transition: color 0.3s ease;
+  }
+  
+  .star.filled {
+    color: #ffcc00; /* Gold color for filled stars */
+  }
+  
+  .star:hover {
+    color: #ffb84d; /* Hover effect for stars */
+  }
+  
+  /* Additional Styling for Product Card */
+  .price {
+    font-weight: bold;
+  }
+  
+  .features {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .feature-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .feature-btn:hover {
+    background-color: #005f73;
+  }
+  
