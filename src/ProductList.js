@@ -1,23 +1,3 @@
-// import React from "react";
-// import ProductCard from "./ProductCard";
-
-// function ProductList({ products, toggleFavorite, toggleExpand, updateRating }) {
-//   return (
-//     <div className="product-list">
-//       {products.map((product) => (
-//         <ProductCard
-//           key={product.id}
-//           product={product}
-//           toggleFavorite={toggleFavorite}
-//           toggleExpand={toggleExpand}
-//           updateRating={updateRating}
-//         />
-//       ))}
-//     </div>
-//   );
-// }
-
-// export default ProductList;
 
 
 

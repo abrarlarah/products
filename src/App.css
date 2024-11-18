@@ -51,11 +51,20 @@ button:nth-of-type(2) {
 }
 
 /* Product List */
-.product-list {
+/* .product-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+} */
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 /* Product Card */
@@ -188,3 +197,10 @@ button.feature-btn {
 .feature-btn:hover {
   background-color: #005f73;
 }
+/* src/styles.css */
+/* src/styles.css */
+.content {
+  padding-top: 100px; /* This is to ensure content is pushed down below the header */
+  padding-bottom: 60px; /* Optional, to ensure the footer is not overlapped */
+}
+

@@ -1,5 +1,9 @@
 import React, { useState, useCallback } from "react";
 import ProductList from "./ProductList";
+ // Import the Footer component
+ import Header from './Header'; // Import the Header component
+ import Footer from './Footer'; 
+
 
 import './styles.css';
 
@@ -118,6 +122,7 @@ function App() {
 
   return (
     <div className="App">
+        <Header /> 
       <h1>Product List</h1>
       <div className="buttons">
         <button onClick={toggleShowFavorites}>
@@ -127,12 +132,15 @@ function App() {
           Clear All Favorites
         </button>
       </div>
+      
       <ProductList
         products={filteredProducts}
         toggleFavorite={toggleFavorite}
         toggleExpand={toggleExpand}
         updateRating={updateRating}
+
       />
+      <Footer />
     </div>
   );
 }
